@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Gold Palace - Premium Jewelry Showroom</title>
+    <meta name="description" content="Discover exquisite gold and silver jewelry collections at Royal Gold Palace. Best prices with certified purity.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Royal Gold Palace</h1>
+                <p>Since 1985</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#prices">Prices</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="tel:+919876543210" class="cta-button phone">
+                    <i class="fas fa-phone-alt"></i> Call Us
+                </a>
+                <a href="https://wa.me/919876543210" class="cta-button whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay">
+                <div class="container">
+                    <h2>Exquisite Jewelry Crafted to Perfection</h2>
+                    <p>Discover our premium collection of 22K & 24K gold and sterling silver jewelry</p>
+                    <a href="#products" class="btn-primary">View Collection</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <div class="container">
+                <h2 class="section-title">Our Premium Collection</h2>
+                <div class="price-toggle">
+                    <button class="price-btn active" data-metal="gold">Gold Prices</button>
+                    <button class="price-btn" data-metal="silver">Silver Prices</button>
+                    <div class="current-price">
+                        <span id="current-metal">Gold</span>: ₹<span id="current-price">5,850</span>/gm
+                    </div>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Product items will be added by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="prices" class="price-section">
+            <div class="container">
+                <h2 class="section-title">Today's Rates</h2>
+                <div class="price-cards">
+                    <div class="price-card gold">
+                        <h3>Gold Rates</h3>
+                        <div class="price-details">
+                            <div class="price-item">
+                                <span>24K (999)</span>
+                                <span>₹5,850/gm</span>
+                            </div>
+                            <div class="price-item">
+                                <span>22K (916)</span>
+                                <span>₹5,450/gm</span>
+                            </div>
+                            <div class="price-item">
+                                <span>18K (750)</span>
+                                <span>₹4,380/gm</span>
+                            </div>
+                        </div>
+                        <p class="price-update">Updated: <span id="gold-update">Today, 10:00 AM</span></p>
+                    </div>
+                    <div class="price-card silver">
+                        <h3>Silver Rates</h3>
+                        <div class="price-details">
+                            <div class="price-item">
+                                <span>Sterling (925)</span>
+                                <span>₹75/gm</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Pure (999)</span>
+                                <span>₹82/gm</span>
+                            </div>
+                        </div>
+                        <p class="price-update">Updated: <span id="silver-update">Today, 10:00 AM</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-info">
+                    <h2 class="section-title">Contact Us</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Jewelry Street, Gold Market, City - 123456</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:kushagrasoni26@gmail.com">kushagrasoni26@gmail.com</a></p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://wa.me/919876543210" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Enquiry Form</h3>
+                    <form id="enquiryForm" action="https://formspree.io/f/kushagrasoni26@gmail.com" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="interest" required>
+                                <option value="" disabled selected>I'm interested in...</option>
+                                <option value="gold-jewelry">Gold Jewelry</option>
+                                <option value="silver-jewelry">Silver Jewelry</option>
+                                <option value="custom-design">Custom Design</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Submit Enquiry</button>
+                    </form>
+                    <div id="formSuccess" class="form-success" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Thank you! Your enquiry has been submitted successfully.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Royal Gold Palace</h3>
+                    <p>Providing premium quality gold and silver jewelry with certified purity since 1985. Your trusted family jeweler.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#prices">Price Today</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Jewelry Street, City</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> kushagrasoni26@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Royal Gold Palace. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/form-handler.js"></script>
+<div class="loading-spinner" id="loadingSpinner">
+    <div class="spinner"></div>
+</div>
+<button class="back-to-top" id="backToTop" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+</body>
+</html>
